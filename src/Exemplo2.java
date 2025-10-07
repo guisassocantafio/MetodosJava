@@ -7,12 +7,15 @@ import java.util.Scanner;
 public class Exemplo2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Digite um número: ");
+        System.out.print("Digite um número: ");
         int num1 = sc.nextInt();
-        System.out.println("Digite outro número: ");
+        System.out.print("Digite outro número: ");
         int num2 = sc.nextInt();
-    }
-    public static void calcular(){
 
+        somar(num1, num2);
+    }
+    public static void somar(int num1, int num2){
+        int resultado = num1 + num2;
+        System.out.println("A soma de " + num1 + " + " + num2 + " é igual a " + resultado);
     }
 }
